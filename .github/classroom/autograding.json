@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Show python versions",
+      "setup": "",
+      "run": "python src/python_versions.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Test Assignment Notebook runs all cells cleanly",
+      "setup": "",
+      "run": "cd notebooks; jupyter nbconvert --execute Assg-02-Logistic-Regression-Gradient-Descent.ipynb --to notebook",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Task 1.1 test flatten_image_dataset",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_flatten_image_dataset",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 1.2 test standardize_image_dataset()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_standardize_image_dataset",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2.1 test sigmoid()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_sigmoid",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2.2 test initialize_parameters()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_initialize_parameters",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2.3 test forwared_pass()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_forward_pass",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2.4 test backward_pass()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_backward_pass",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2.5 test optimize()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_optimize",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2.6 test predict()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_predict",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
