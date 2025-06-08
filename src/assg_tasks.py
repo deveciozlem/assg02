@@ -21,7 +21,9 @@ def flatten_image_dataset(image_dataset):
     image_dataset_flattened - a 2-D tensor of shape (num_images, (width * height * channels)), where
        the row/image samples of the input dataset have been flattened to a 1-D vector.
     """
-    return np.zeros((2,2))
+    n_samples = image_dataset.shape[0]
+    n_features = int(np.prod(image_dataset.shape[1:]))
+    return image_dataset.reshape(n_samples, n_features)
 
 def standardize_image_dataset(image_dataset):
     """ Standardize a 4-D tensor which is a dataset of images of the shape
